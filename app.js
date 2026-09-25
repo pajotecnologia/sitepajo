@@ -17,6 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
 /* --------------------------------------------------------------------------
    1. SYSTEM TABS & DYNAMIC SHOWCASE (6 SYSTEMS)
    -------------------------------------------------------------------------- */
+const PAJO_CONFIG = {
+    whatsapp: '5587996540551',
+    instagram: 'https://www.instagram.com/pajotecnologia'
+};
+
 const systemsData = {
     pjzap: {
         name: 'PJZap Multiatendimento',
@@ -274,18 +279,22 @@ function closeDrawer() {
 /* --------------------------------------------------------------------------
    5. ACCORDION COMPONENT
    -------------------------------------------------------------------------- */
-function initAccordions() {}
+function initAccordions() {
+    document.querySelectorAll('.accordion-item').forEach(item => {
+        const button = item.querySelector('.accordion-btn');
+        if (button) button.setAttribute('aria-expanded', item.classList.contains('active') ? 'true' : 'false');
+    });
+}
 
 function toggleAccordion(buttonEl) {
     const item = buttonEl.closest('.accordion-item');
     const allItems = document.querySelectorAll('.accordion-item');
-
+    const willOpen = !item.classList.contains('active');
     allItems.forEach(i => {
-        if (i === item) {
-            i.classList.toggle('active');
-        } else {
-            i.classList.remove('active');
-        }
+        const button = i.querySelector('.accordion-btn');
+        const isCurrent = i === item;
+        i.classList.toggle('active', isCurrent && willOpen);
+        if (button) button.setAttribute('aria-expanded', isCurrent && willOpen ? 'true' : 'false');
     });
 }
 
@@ -326,7 +335,7 @@ function handleContactSubmit(event) {
             feedback.style.display = 'block';
         }
 
-        const whatsappUrl = `https://wa.me/5587999999999?text=${textMsg}`;
+        const whatsappUrl = `https://wa.me/${PAJO_CONFIG.whatsapp}?text=${textMsg}`;
         window.open(whatsappUrl, '_blank');
 
         if (submitBtn) {
@@ -379,7 +388,7 @@ function handleModalSubmit(event) {
         `🏢 *Empresa:* ${encodeURIComponent(company)}%0A` +
         `📱 *WhatsApp:* ${encodeURIComponent(phone)}`;
 
-    const whatsappUrl = `https://wa.me/5587999999999?text=${textMsg}`;
+    const whatsappUrl = `https://wa.me/${PAJO_CONFIG.whatsapp}?text=${textMsg}`;
     window.open(whatsappUrl, '_blank');
 
     closeDemoModal();
