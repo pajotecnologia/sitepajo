@@ -49,18 +49,18 @@ const systemsData = {
         ]
     },
     ponto: {
-        name: 'Ponto Eletrônico',
+        name: 'EzPoint Web (Ponto & Faciais)',
         url: 'https://ponto.pajotech.com.br',
-        previewUrl: 'https://ponto.pajotech.com.br/espelho-ponto',
-        badge: 'PONTO PORTARIA 671',
+        previewUrl: 'https://ponto.pajotech.com.br',
+        badge: 'EZPOINT WEB & FACIAIS FOCUS / EVO 40',
         badgeIcon: 'fa-user-clock',
-        tag: 'Homologado MTE',
-        title: 'Controle de Ponto Web, Mobile & Biometria',
-        desc: 'Espelho de ponto automatizado, cerca virtual com GPS, banco de horas e exportação para folha.',
+        tag: 'Portaria 671 MTE',
+        title: 'Soluções em Ponto Eletrônico & Aparelhos Faciais',
+        desc: 'Tratamento em nuvem EzPoint Web, reconhecimento facial ultrarrápido com aparelhos FOCUS e EVO 40, cerca virtual GPS e conformidade legal.',
         kpis: [
-            { label: 'Batidas Hoje', val: '9.420' },
-            { label: 'Precisão GPS', val: '100%' },
-            { label: 'Economia Folha', val: '40%' }
+            { label: 'Reconhecimento', val: '< 0.2 seg' },
+            { label: 'Homologação', val: 'Portaria 671' },
+            { label: 'Economia RH', val: '40%' }
         ]
     },
     imob: {
@@ -79,10 +79,10 @@ const systemsData = {
         ]
     },
     lavanderia: {
-        name: 'Lavanderia Pro',
-        url: 'https://lavanderia.pajotech.com.br',
-        previewUrl: 'https://lavanderia.pajotech.com.br/ordens-servico',
-        badge: 'LAVANDERIA GESTÃO',
+        name: 'SGL Lavanderia',
+        url: 'https://sgl.pajotech.com.br',
+        previewUrl: 'https://sgl.pajotech.com.br/ordens-servico',
+        badge: 'SGL LAVANDERIA',
         badgeIcon: 'fa-shirt',
         tag: 'Rastreio por Barcode',
         title: 'Controle de OS por Peça, Peso & WhatsApp',

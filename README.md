@@ -5,15 +5,15 @@ Apresentação do ecossistema de soluções em nuvem e softwares especializados.
 
 ---
 
-## 🚀 Nossos Sistemas em Nuvem
+## 🚀 Nossos Sistemas & Soluções em Nuvem
 
 | Sistema | Domínio Oficial | Descrição |
 | :--- | :--- | :--- |
 | **PJZap** | [pjzap.pajotech.com.br](https://pjzap.pajotech.com.br) | Sistema de Multiatendimento WhatsApp & Chatbots Omnichannel |
-| **SGH** | [sgh.pajotech.com.br](https://sgh.pajotech.com.br) | Sistema de Gestão Hospitalar, Prontuário Eletrônico & Triagem Manchester |
-| **Ponto** | [ponto.pajotech.com.br](https://ponto.pajotech.com.br) | Controle de Ponto Digital & Gestão de Jornada (Portaria 671 MTE) |
+| **SGH** | [sgh.pajotech.com.br](https://sgh.pajotech.com.br) | Sistema de Gestão Hospitalar, Prontuário Eletrônico (PEP) & Triagem Manchester |
+| **EzPoint Web (Ponto)** | [ponto.pajotech.com.br](https://ponto.pajotech.com.br) | Portal Informativo sobre EzPoint Web (Portaria 671 MTE) e Aparelhos de Reconhecimento Facial **FOCUS** e **EVO 40** |
 | **IMOB** | [imob.pajotech.com.br](https://imob.pajotech.com.br) | Gestão Imobiliária, Contratos de Locação Automatizados & CRM |
-| **Lavanderia** | [lavanderia.pajotech.com.br](https://lavanderia.pajotech.com.br) | Gestão de Lavanderias, Rastreamento por Código de Barras & WhatsApp |
+| **SGL** | [sgl.pajotech.com.br](https://sgl.pajotech.com.br) | Sistema de Gestão para Lavanderias, Rastreamento por Código de Barras & WhatsApp |
 | **Pajotech Tree** | [tree.pajotech.com.br](https://tree.pajotech.com.br) | Central Unificada de Links & Acessos Corporativos |
 
 ---
