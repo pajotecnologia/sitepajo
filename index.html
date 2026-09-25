@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAJO Tecnologia | Soluções Tecnológicas Inovadoras & Sistemas em Nuvem</title>
+    <meta name="description" content="PAJO Tecnologia (antiga Click Informática). Softwares de alta performance: PJZap Multiatendimento WhatsApp, Gestão Hospitalar (SGH), Ponto Eletrônico, IMOB, Lavanderia e Pajotech Tree. Garanhuns e Brejão - PE.">
+    <meta name="keywords" content="Pajo Tecnologia, Click Informática, PJZap Multiatendimento, SGH Hospitalar, Ponto Eletrônico Portaria 671, Gestão Imobiliária IMOB, Software para Lavanderia, LinkTree Pajotech, Garanhuns PE, Brejão PE">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PAJO Tecnologia | Sistemas Inteligentes em Nuvem">
+    <meta property="og:description" content="Ecossistema completo de softwares para impulsionar a gestão da sua empresa. Conheça o PJZap, SGH, Ponto, IMOB, Lavanderia e Pajotech Tree.">
+    <meta property="og:image" content="assets/logo-pajo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Background Ambient Glows -->
+    <div class="glow-orb glow-top-left"></div>
+    <div class="glow-orb glow-center-right"></div>
+    <div class="glow-orb glow-bottom"></div>
+
+    <!-- Announcement Bar -->
+    <div class="top-announcement-bar">
+        <div class="container announcement-inner">
+            <span class="badge-history"><i class="fa-solid fa-clock-rotate-left"></i> Tradição & Inovação</span>
+            <p>De <strong>Click Informática</strong> a <strong>PAJO Tecnologia</strong>: Mais de 20 anos de excelência em tecnologia e desenvolvimento em Pernambuco.</p>
+            <a href="#historia" class="announcement-link">Nossa Trajetória <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="main-header" id="header">
+        <div class="container header-container">
+            <a href="#inicio" class="brand-logo" aria-label="PAJO Tecnologia Página Inicial">
+                <img src="assets/logo-pajo.png" alt="PAJO Tecnologia" class="header-logo-img">
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#inicio" class="nav-link active">Início</a></li>
+                    
+                    <!-- Mega Dropdown: Sistemas Pajotech -->
+                    <li class="nav-item dropdown">
+                        <a href="#sistemas" class="nav-link dropdown-toggle" id="sistemasMenuBtn">
+                            Nossos Sistemas <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-header">
+                                <span>Soluções Pajotech em Nuvem</span>
+                                <small>Clique para acessar ou ver detalhes</small>
+                            </div>
+                            <div class="dropdown-grid">
+                                <a href="#sistemas" class="dropdown-card" onclick="selectSystemTab('pjzap')">
+                                    <div class="drop-icon pjzap"><i class="fa-brands fa-whatsapp"></i></div>
+                                    <div class="drop-info">
+                                        <strong>PJZap Multiatendimento</strong>
+                                        <span>pjzap.pajotech.com.br</span>
+                                    </div>
+                                </a>
+                                <a href="#sistemas" class="dropdown-card" onclick="selectSystemTab('sgh')">
+                                    <div class="drop-icon sgh"><i class="fa-solid fa-hospital-user"></i></div>
+                                    <div class="drop-info">
+                                        <strong>SGH Hospitalar</strong>
+                                        <span>sgh.pajotech.com.br</span>
+                                    </div>
+                                </a>
+                                <a href="#sistemas" class="dropdown-card" onclick="selectSystemTab('ponto')">
+                                    <div class="drop-icon ponto"><i class="fa-solid fa-user-clock"></i></div>
+                                    <div class="drop-info">
+                                        <strong>Controle de Ponto</strong>
+                                        <span>ponto.pajotech.com.br</span>
+                                    </div>
+                                </a>
+                                <a href="#sistemas" class="dropdown-card" onclick="selectSystemTab('imob')">
+                                    <div class="drop-icon imob"><i class="fa-solid fa-building-user"></i></div>
+                                    <div class="drop-info">
+                                        <strong>IMOB Imobiliário</strong>
+                                        <span>imob.pajotech.com.br</span>
+                                    </div>
+                                </a>
+                                <a href="#sistemas" class="dropdown-card" onclick="selectSystemTab('lavanderia')">
+                                    <div class="drop-icon lavanderia"><i class="fa-solid fa-shirt"></i></div>
+                                    <div class="drop-info">
+                                        <strong>Lavanderia Pro</strong>
+                                        <span>lavanderia.pajotech.com.br</span>
+                                    </div>
+                                </a>
+                                <a href="#sistemas" class="dropdown-card" onclick="selectSystemTab('tree')">
+                                    <div class="drop-icon tree"><i class="fa-solid fa-diagram-project"></i></div>
+                                    <div class="drop-info">
+                                        <strong>Pajotech Tree</strong>
+                                        <span>tree.pajotech.com.br</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a href="#historia" class="nav-link">Quem Somos</a></li>
+                    <li class="nav-item"><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Action CTA Buttons -->
+            <div class="header-actions">
+                <button class="theme-toggle-btn" id="themeToggleBtn" title="Alternar Modo Claro/Escuro" aria-label="Alternar tema">
+                    <i class="fa-solid fa-sun light-icon"></i>
+                    <i class="fa-solid fa-moon dark-icon"></i>
+                </button>
+                <a href="#sistemas" class="btn btn-outline-glow btn-sm desktop-only">Acessar Plataformas</a>
+                <a href="https://wa.me/5587999999999?text=Olá! Gostaria de conhecer os sistemas da PAJO Tecnologia." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <i class="fa-brands fa-whatsapp"></i> Falar Conosco
+                </a>
+                
+                <!-- Mobile Hamburger Toggle -->
+                <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Abrir Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer Overlay -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <img src="assets/logo-pajo.png" alt="PAJO Tecnologia" class="drawer-logo-img">
+            <button class="drawer-close" id="drawerClose"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="drawer-body">
+            <ul class="mobile-menu-list">
+                <li><a href="#inicio" class="mobile-link" onclick="closeDrawer()">Início</a></li>
+                <li class="mobile-category">NOSSOS SISTEMAS</li>
+                <li><a href="#sistemas" class="mobile-link" onclick="selectSystemTab('pjzap'); closeDrawer()"><i class="fa-brands fa-whatsapp text-whatsapp"></i> PJZap Multiatendimento (pjzap.pajotech)</a></li>
+                <li><a href="#sistemas" class="mobile-link" onclick="selectSystemTab('sgh'); closeDrawer()"><i class="fa-solid fa-hospital-user text-emerald"></i> SGH Hospitalar (sgh.pajotech)</a></li>
+                <li><a href="#sistemas" class="mobile-link" onclick="selectSystemTab('ponto'); closeDrawer()"><i class="fa-solid fa-user-clock text-cyan"></i> Ponto Eletrônico (ponto.pajotech)</a></li>
+                <li><a href="#sistemas" class="mobile-link" onclick="selectSystemTab('imob'); closeDrawer()"><i class="fa-solid fa-building-user text-amber"></i> IMOB Imobiliária (imob.pajotech)</a></li>
+                <li><a href="#sistemas" class="mobile-link" onclick="selectSystemTab('lavanderia'); closeDrawer()"><i class="fa-solid fa-shirt text-blue"></i> Lavanderia Gestão (lavanderia.pajotech)</a></li>
+                <li><a href="#sistemas" class="mobile-link" onclick="selectSystemTab('tree'); closeDrawer()"><i class="fa-solid fa-diagram-project text-purple"></i> Pajotech Tree (tree.pajotech)</a></li>
+                <li class="mobile-category">INSTITUCIONAL</li>
+                <li><a href="#historia" class="mobile-link" onclick="closeDrawer()">Quem Somos (Click Informática)</a></li>
+                <li><a href="#diferenciais" class="mobile-link" onclick="closeDrawer()">Nossos Diferenciais</a></li>
+                <li><a href="#contato" class="mobile-link" onclick="closeDrawer()">Fale Conosco</a></li>
+            </ul>
+            <div class="drawer-footer">
+                <a href="mailto:paulo@pajotecnologia.com.br" class="drawer-contact-item">
+                    <i class="fa-solid fa-envelope"></i> paulo@pajotecnologia.com.br
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content">
+
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="inicio">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span>
+                        <span class="badge-text">Ecossistema de Soluções Inteligentes em Nuvem</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Impulsionando seu negócio com <span class="gradient-text">soluções tecnológicas</span> inovadoras
+                    </h1>
+                    <p class="hero-description">
+                        Desenvolvimento de software sob medida, <strong>PJZap Multiatendimento</strong>, controle de ponto em conformidade com a Portaria 671, gestão hospitalar (SGH), imobiliária (IMOB) e serviços avançados de TI para acelerar sua empresa.
+                    </p>
+
+                    <!-- Fast Portal Links Badge -->
+                    <div class="portal-badges-preview">
+                        <span class="portal-label"><i class="fa-solid fa-server"></i> Portais Ativos:</span>
+                        <div class="portal-tags">
+                            <a href="https://pjzap.pajotech.com.br" target="_blank" class="portal-tag tag-pjzap"><i class="fa-brands fa-whatsapp"></i> p適zap.pajotech.com.br</a>
+                            <a href="https://sgh.pajotech.com.br" target="_blank" class="portal-tag tag-sgh">sgh.pajotech.com.br</a>
+                            <a href="https://ponto.pajotech.com.br" target="_blank" class="portal-tag tag-ponto">ponto.pajotech.com.br</a>
+                            <a href="https://imob.pajotech.com.br" target="_blank" class="portal-tag tag-imob">imob.pajotech.com.br</a>
+                            <a href="https://lavanderia.pajotech.com.br" target="_blank" class="portal-tag tag-lavanderia">lavanderia.pajotech.com.br</a>
+                            <a href="https://tree.pajotech.com.br" target="_blank" class="portal-tag tag-tree">tree.pajotech.com.br</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="#sistemas" class="btn btn-primary btn-lg">
+                            <i class="fa-solid fa-cubes"></i> Explorar Nossos Sistemas
+                        </a>
+                        <a href="#contato" class="btn btn-glass btn-lg">
+                            <i class="fa-solid fa-headset"></i> Solicitar Demonstração
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats Bar -->
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <span class="stat-number" data-count="20">20+</span>
+                            <span class="stat-label">Anos de Experiência</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-count="6">6+</span>
+                            <span class="stat-label">Plataformas em Nuvem</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-count="99">99.9%</span>
+                            <span class="stat-label">Disponibilidade & Suporte</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Interactive Visual / System Showcase Deck -->
+                <div class="hero-visual">
+                    <div class="tech-card-showcase">
+                        <div class="showcase-window">
+                            <div class="window-header">
+                                <div class="window-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <div class="window-address-bar">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <span id="heroWindowUrl">https://pjzap.pajotech.com.br/atendimentos</span>
+                                </div>
+                                <div class="window-status">
+                                    <span class="badge-online"><i class="fa-solid fa-circle"></i> Online</span>
+                                </div>
+                            </div>
+                            
+                            <div class="window-content" id="heroDisplayContent">
+                                <!-- Interactive dynamic view loaded by JS -->
+                                <div class="showcase-preview-card p適zap-active">
+                                    <div class="preview-badge-row">
+                                        <span class="preview-badge text-whatsapp"><i class="fa-brands fa-whatsapp"></i> PJZAP MULTIATENDIMENTO</span>
+                                        <span class="preview-tag">WhatsApp Omnichannel</span>
+                                    </div>
+                                    <h3>Múltiplos Atendentes em um Único WhatsApp</h3>
+                                    <p>Centralize filas por departamentos (Vendas, Suporte, Financeiro), chatbots automáticos e relatórios de SLA.</p>
+                                    <div class="preview-mini-kpis">
+                                        <div class="kpi-box">
+                                            <small>Atendimentos/Dia</small>
+                                            <strong>1.840+</strong>
+                                        </div>
+                                        <div class="kpi-box">
+                                            <small>Tempo Médio Espera</small>
+                                            <strong>45 seg</strong>
+                                        </div>
+                                        <div class="kpi-box">
+                                            <small>Satisfação CSAT</small>
+                                            <strong>98.6%</strong>
+                                        </div>
+                                    </div>
+                                    <div class="preview-cta-row">
+                                        <a href="https://pjzap.pajotech.com.br" target="_blank" class="btn btn-sm btn-primary">Acessar p適zap.pajotech.com.br <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        <button class="btn btn-sm btn-outline-glow" onclick="selectSystemTab('pjzap')">Ver Todos os Recursos</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Micro Cards -->
+                        <div class="floating-badge badge-top-right">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <div>
+                                <strong>Segurança LGPD</strong>
+                                <span>Criptografia de ponta a ponta</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-badge badge-bottom-left">
+                            <i class="fa-solid fa-bolt"></i>
+                            <div>
+                                <strong>Alta Performance</strong>
+                                <span>Servidores em Nuvem 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SYSTEMS & ABAS INDIVIDUAIS SECTION (CENTRAL REQUIREMENT) -->
+        <section class="systems-section" id="sistemas">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-pill"><i class="fa-solid fa-layer-group"></i> Ecossistema Pajotech</span>
+                    <h2 class="section-title">Nossos Sistemas & <span class="gradient-text">Plataformas em Nuvem</span></h2>
+                    <p class="section-subtitle">
+                        Explore as abas individuais de cada sistema desenvolvido e operado pela PAJO Tecnologia. Soluções especializadas para multiatendimento WhatsApp, saúde, recursos humanos, imobiliárias, lavanderias e links corporativos.
+                    </p>
+                </div>
+
+                <!-- NAVIGATION TABS (6 INDIVIDUAL TABS) -->
+                <div class="systems-tab-navigation" role="tablist" aria-label="Abas dos Sistemas">
+                    
+                    <button class="system-tab-btn active" role="tab" aria-selected="true" data-system="pjzap" id="tab-pjzap" onclick="switchSystemTab('pjzap')">
+                        <div class="tab-icon-wrap pjzap"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div class="tab-btn-text">
+                            <span class="tab-name">PJZap Multiatendimento</span>
+                            <small class="tab-domain">pjzap.pajotech.com.br</small>
+                        </div>
+                    </button>
+
+                    <button class="system-tab-btn" role="tab" aria-selected="false" data-system="sgh" id="tab-sgh" onclick="switchSystemTab('sgh')">
+                        <div class="tab-icon-wrap sgh"><i class="fa-solid fa-hospital-user"></i></div>
+                        <div class="tab-btn-text">
+                            <span class="tab-name">SGH Hospitalar</span>
+                            <small class="tab-domain">sgh.pajotech.com.br</small>
+                        </div>
+                    </button>
+
+                    <button class="system-tab-btn" role="tab" aria-selected="false" data-system="ponto" id="tab-ponto" onclick="switchSystemTab('ponto')">
+                        <div class="tab-icon-wrap ponto"><i class="fa-solid fa-user-clock"></i></div>
+                        <div class="tab-btn-text">
+                            <span class="tab-name">Ponto Eletrônico</span>
+                            <small class="tab-domain">ponto.pajotech.com.br</small>
+                        </div>
+                    </button>
+
+                    <button class="system-tab-btn" role="tab" aria-selected="false" data-system="imob" id="tab-imob" onclick="switchSystemTab('imob')">
+                        <div class="tab-icon-wrap imob"><i class="fa-solid fa-building-user"></i></div>
+                        <div class="tab-btn-text">
+                            <span class="tab-name">IMOB</span>
+                            <small class="tab-domain">imob.pajotech.com.br</small>
+                        </div>
+                    </button>
+
+                    <button class="system-tab-btn" role="tab" aria-selected="false" data-system="lavanderia" id="tab-lavanderia" onclick="switchSystemTab('lavanderia')">
+                        <div class="tab-icon-wrap lavanderia"><i class="fa-solid fa-shirt"></i></div>
+                        <div class="tab-btn-text">
+                            <span class="tab-name">Lavanderia</span>
+                            <small class="tab-domain">lavanderia.pajotech.com.br</small>
+                        </div>
+                    </button>
+
+                    <button class="system-tab-btn" role="tab" aria-selected="false" data-system="tree" id="tab-tree" onclick="switchSystemTab('tree')">
+                        <div class="tab-icon-wrap tree"><i class="fa-solid fa-diagram-project"></i></div>
+                        <div class="tab-btn-text">
+                            <span class="tab-name">Pajotech Tree</span>
+                            <small class="tab-domain">tree.pajotech.com.br</small>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- SYSTEMS TAB PANES CONTENT CONTAINER -->
+                <div class="systems-tab-content">
+                    
+                    <!-- TAB 0: PJZAP MULTIATENDIMENTO -->
+                    <div class="system-pane active" id="pane-pjzap" role="tabpanel" aria-labelledby="tab-pjzap">
+                        <div class="pane-grid">
+                            <div class="pane-info">
+                                <div class="pane-badge pjzap-badge">
+                                    <i class="fa-brands fa-whatsapp"></i> Multiatendimento WhatsApp & Chatbots
+                                </div>
+                                <h3 class="pane-title">PJZap — Sistema de Multiatendimento WhatsApp & Omnichannel</h3>
+                                <div class="domain-direct-box">
+                                    <i class="fa-solid fa-globe"></i>
+                                    <span>Domínio Oficial:</span>
+                                    <a href="https://pjzap.pajotech.com.br" target="_blank" rel="noopener noreferrer" class="domain-link">https://pjzap.pajotech.com.br <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                                <p class="pane-desc">
+                                    O <strong>PJZap</strong> é a plataforma definitiva da PAJO Tecnologia para conectar toda a sua equipe de atendentes a <strong>um único número oficial de WhatsApp</strong>. Organize atendimentos em filas por setores, automatize o primeiro contato com chatbots inteligentes e acompanhe métricas de atendimento em tempo real.
+                                </p>
+
+                                <div class="features-checklist">
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-whatsapp"></i>
+                                        <div>
+                                            <strong>Múltiplos Atendentes Simultâneos em 1 Número</strong>
+                                            <p>Vários operadores respondendo clientes ao mesmo tempo sem perder conversas.</p>
+                                        </div>
+                                    </div>
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-whatsapp"></i>
+                                        <div>
+                                            <strong>Filas & Departamentos Inteligentes</strong>
+                                            <p>Distribuição automática para Comercial, Suporte, Financeiro e Triagem.</p>
+                                        </div>
+                                    </div>
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-whatsapp"></i>
+                                        <div>
+                                            <strong>Chatbots de Autoatendimento & Respostas Rápidas</strong>
+                                            <p>Menus interativos 24/7 com respostas pré-programadas e envio de 2ª via de boletos/arquivos.</p>
+                                        </div>
+                                    </div>
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-whatsapp"></i>
+                                        <div>
+                                            <strong>Painel de Gestão & Relatórios de Produtividade</strong>
+                                            <p>Controle de tempo médio de espera (TME), tempo de atendimento (TMA) e avaliações CSAT.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pane-actions">
+                                    <a href="https://pjzap.pajotech.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Acessar p適zap.pajotech.com.br
+                                    </a>
+                                    <button class="btn btn-glass" onclick="openDemoModal('PJZap - Multiatendimento')">
+                                        <i class="fa-brands fa-whatsapp"></i> Testar PJZap Gratuitamente
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Visual Pane Mockup / Simulator -->
+                            <div class="pane-mockup-wrapper">
+                                <div class="mockup-screen-box">
+                                    <div class="screen-header">
+                                        <span class="screen-title"><i class="fa-brands fa-whatsapp text-whatsapp"></i> Painel PJZap Atendimentos</span>
+                                        <span class="screen-badge">5 Atendentes Online</span>
+                                    </div>
+                                    <div class="screen-body">
+                                        <!-- Mockup PJZap UI -->
+                                        <div class="mock-stats-row">
+                                            <div class="mock-stat-item border-green">
+                                                <small>Conversas Ativas</small>
+                                                <h4>28</h4>
+                                                <span class="stat-trend"><i class="fa-solid fa-headset"></i> 4 Operadores</span>
+                                            </div>
+                                            <div class="mock-stat-item border-blue">
+                                                <small>Na Fila de Espera</small>
+                                                <h4>3 aguardando</h4>
+                                                <span class="stat-sub">Tempo: 30s</span>
+                                            </div>
+                                            <div class="mock-stat-item border-red">
+                                                <small>Finalizados Hoje</small>
+                                                <h4>312</h4>
+                                                <span class="stat-trend"><i class="fa-solid fa-check-double"></i> 99% resolvidas</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="mock-table-widget">
+                                            <div class="table-title">Filas de Atendimento em Tempo Real</div>
+                                            <div class="mock-row">
+                                                <span class="triage-badge green">Vendas</span>
+                                                <span class="patient-name">Lucas Mendonça</span>
+                                                <span class="patient-info">Orçamento SGH Cloud</span>
+                                                <span class="patient-status badge-live">Atend. Paulo</span>
+                                            </div>
+                                            <div class="mock-row">
+                                                <span class="triage-badge yellow">Suporte</span>
+                                                <span class="patient-name">Clínica Santa Clara</span>
+                                                <span class="patient-info">Dúvida fechamento folha Ponto</span>
+                                                <span class="patient-status badge-live">Atend. Juliana</span>
+                                            </div>
+                                            <div class="mock-row">
+                                                <span class="triage-badge red">Financeiro</span>
+                                                <span class="patient-name">Imobiliária Central</span>
+                                                <span class="patient-info">Solicitação 2ª via NF</span>
+                                                <span class="patient-status">Bot Autoatend.</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="mock-direct-btn-row">
+                                            <a href="https://pjzap.pajotech.com.br" target="_blank" class="mock-login-link">
+                                                Entrar no PJZap (pjzap.pajotech.com.br) &rarr;
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 1: SGH HOSPITALAR -->
+                    <div class="system-pane" id="pane-sgh" role="tabpanel" aria-labelledby="tab-sgh">
+                        <div class="pane-grid">
+                            <div class="pane-info">
+                                <div class="pane-badge sgh-badge">
+                                    <i class="fa-solid fa-stethoscope"></i> Saúde & Gestão Hospitalar
+                                </div>
+                                <h3 class="pane-title">SGH — Sistema de Gerenciamento Hospitalar & Clínicas</h3>
+                                <div class="domain-direct-box">
+                                    <i class="fa-solid fa-globe"></i>
+                                    <span>Domínio Oficial:</span>
+                                    <a href="https://sgh.pajotech.com.br" target="_blank" rel="noopener noreferrer" class="domain-link">https://sgh.pajotech.com.br <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                                <p class="pane-desc">
+                                    O <strong>SGH Pajotech</strong> é uma plataforma hospitalar completa, desenvolvida para modernizar prontuários médicos, otimizar a recepção, automatizar a triagem com classificação de risco Manchester e centralizar leitos, faturamento e farmácia.
+                                </p>
+
+                                <div class="features-checklist">
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-emerald"></i>
+                                        <div>
+                                            <strong>Prontuário Eletrônico do Paciente (PEP)</strong>
+                                            <p>Histórico médico seguro, prescrição eletrônica e anamnese rápida.</p>
+                                        </div>
+                                    </div>
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-emerald"></i>
+                                        <div>
+                                            <strong>Triagem Manchester & Recepção</strong>
+                                            <p>Classificação de prioridade visual por cores e controle de filas de espera.</p>
+                                        </div>
+                                    </div>
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-emerald"></i>
+                                        <div>
+                                            <strong>Gestão de Leitos, Internação & Farmácia</strong>
+                                            <p>Monitoramento de ocupação em tempo real e dispensação segura de medicamentos.</p>
+                                        </div>
+                                    </div>
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-emerald"></i>
+                                        <div>
+                                            <strong>Faturamento TISS / Convênios & SUS</strong>
+                                            <p>Emissão de guias, relatórios financeiros e controle de repasses médicos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pane-actions">
+                                    <a href="https://sgh.pajotech.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Acessar sgh.pajotech.com.br
+                                    </a>
+                                    <button class="btn btn-glass" onclick="openDemoModal('SGH - Gestão Hospitalar')">
+                                        <i class="fa-solid fa-calendar-check"></i> Agendar Apresentação
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Visual Pane Mockup / Simulator -->
+                            <div class="pane-mockup-wrapper">
+                                <div class="mockup-screen-box">
+                                    <div class="screen-header">
+                                        <span class="screen-title"><i class="fa-solid fa-hospital"></i> Painel SGH Hospitalar</span>
+                                        <span class="screen-badge">Ambiente Seguro</span>
+                                    </div>
+                                    <div class="screen-body">
+                                        <div class="mock-stats-row">
+                                            <div class="mock-stat-item border-green">
+                                                <small>Atendimentos Hoje</small>
+                                                <h4>142</h4>
+                                                <span class="stat-trend"><i class="fa-solid fa-arrow-trend-up"></i> +12% vs ontem</span>
+                                            </div>
+                                            <div class="mock-stat-item border-blue">
+                                                <small>Fila Triagem</small>
+                                                <h4>8 aguardando</h4>
+                                                <span class="stat-sub">Tempo Médio: 4 min</span>
+                                            </div>
+                                            <div class="mock-stat-item border-red">
+                                                <small>Emergência Vermelha</small>
+                                                <h4>1 prioritário</h4>
+                                                <span class="stat-alert">Leito 03 UTI</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="mock-table-widget">
+                                            <div class="table-title">Classificação de Risco Manchester Recente</div>
+                                            <div class="mock-row">
+                                                <span class="triage-badge red">Vermelho</span>
+                                                <span class="patient-name">Carlos Eduardo S.</span>
+                                                <span class="patient-info">Dor torácica aguda</span>
+                                                <span class="patient-status badge-live">Em Atendimento</span>
+                                            </div>
+                                            <div class="mock-row">
+                                                <span class="triage-badge yellow">Amarelo</span>
+                                                <span class="patient-name">Mariana Lima F.</span>
+                                                <span class="patient-info">Febre alta contínua</span>
+                                                <span class="patient-status">Triado (Sala 2)</span>
+                                            </div>
+                                            <div class="mock-row">
+                                                <span class="triage-badge green">Verde</span>
+                                                <span class="patient-name">Roberto Alves P.</span>
+                                                <span class="patient-info">Queixa respiratória leve</span>
+                                                <span class="patient-status">Recepção</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="mock-direct-btn-row">
+                                            <a href="https://sgh.pajotech.com.br" target="_blank" class="mock-login-link">
+                                                Entrar no SGH (sgh.pajotech.com.br) &rarr;
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 2: PONTO ELETRÔNICO (PORTARIA 671) -->
+                    <div class="system-pane" id="pane-ponto" role="tabpanel" aria-labelledby="tab-ponto">
+                        <div class="pane-grid">
+                            <div class="pane-info">
+                                <div class="pane-badge ponto-badge">
+                                    <i class="fa-solid fa-fingerprint"></i> RH & Gestão de Jornada de Trabalho
+                                </div>
+                                <h3 class="pane-title">Ponto — Sistema de Registro & Controle de Ponto Digital</h3>
+                                <div class="domain-direct-box">
+                                    <i class="fa-solid fa-globe"></i>
+                                    <span>Domínio Oficial:</span>
+                                    <a href="https://ponto.pajotech.com.br" target="_blank" rel="noopener noreferrer" class="domain-link">https://ponto.pajotech.com.br <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                                <p class="pane-desc">
+                                    Em total conformidade com a <strong>Portaria 671/MTE</strong>, o <strong>Ponto Pajotech</strong> simplifica o fechamento de folha, gestão de horas extras, banco de horas e registro de ponto web, mobile e biométrico com geolocalização e reconhecimento facial.
+                                </p>
+
+                                <div class="features-checklist">
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-cyan"></i>
+                                        <div>
+                                            <strong>100% Homologado Portaria 671 MTE</strong>
+                                            <p>Geração de arquivos fiscais AFD, AFDT e ACJEF prontos para fiscalização.</p>
+                                        </div>
+                                    </div>
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-cyan"></i>
+                                        <div>
+                                            <strong>Ponto Web, Mobile com GPS & Biometria</strong>
+                                            <p>Registro seguro pelo celular ou computador com foto e cercamento virtual.</p>
+                                        </div>
+                                    </div>
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-cyan"></i>
+                                        <div>
+                                            <strong>Espelho de Ponto & Tratamento Automatizado</strong>
+                                            <p>Abono de faltas, atestados médicos e cálculo automático de banco de horas.</p>
+                                        </div>
+                                    </div>
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-cyan"></i>
+                                        <div>
+                                            <strong>Exportação Direta para Folha de Pagamento</strong>
+                                            <p>Integração com os principais softwares contábeis e de folha do Brasil.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pane-actions">
+                                    <a href="https://ponto.pajotech.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Acessar ponto.pajotech.com.br
+                                    </a>
+                                    <button class="btn btn-glass" onclick="openDemoModal('Ponto Eletrônico')">
+                                        <i class="fa-solid fa-calculator"></i> Simular Economia para sua Empresa
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Visual Pane Mockup / Simulator -->
+                            <div class="pane-mockup-wrapper">
+                                <div class="mockup-screen-box">
+                                    <div class="screen-header">
+                                        <span class="screen-title"><i class="fa-solid fa-clock"></i> Espelho de Ponto em Tempo Real</span>
+                                        <span class="screen-badge">Portaria 671</span>
+                                    </div>
+                                    <div class="screen-body">
+                                        <div class="ponto-clock-display">
+                                            <div class="live-clock" id="livePontoClock">15:02:45</div>
+                                            <div class="live-date">Sexta-feira, 25 de Setembro</div>
+                                            <span class="gps-badge"><i class="fa-solid fa-location-dot"></i> GPS Autenticado (Garanhuns, PE)</span>
+                                        </div>
+
+                                        <div class="mock-table-widget">
+                                            <div class="table-title">Batidas Registradas Hoje (Exemplo Colaborador)</div>
+                                            <div class="ponto-row">
+                                                <span><i class="fa-solid fa-right-to-bracket text-emerald"></i> Entrada 1</span>
+                                                <strong>08:00</strong>
+                                                <small class="text-muted">Reconhecimento Facial OK</small>
+                                            </div>
+                                            <div class="ponto-row">
+                                                <span><i class="fa-solid fa-utensils text-amber"></i> Almoço Saída</span>
+                                                <strong>12:02</strong>
+                                                <small class="text-muted">App Mobile</small>
+                                            </div>
+                                            <div class="ponto-row">
+                                                <span><i class="fa-solid fa-mug-hot text-amber"></i> Almoço Retorno</span>
+                                                <strong>13:00</strong>
+                                                <small class="text-muted">App Mobile</small>
+                                            </div>
+                                            <div class="ponto-row">
+                                                <span><i class="fa-solid fa-right-from-bracket text-blue"></i> Saída 2</span>
+                                                <strong>17:00</strong>
+                                                <small class="text-muted">Jornada 8h Concluída</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="mock-direct-btn-row">
+                                            <a href="https://ponto.pajotech.com.br" target="_blank" class="mock-login-link">
+                                                Acessar Painel do Ponto (ponto.pajotech.com.br) &rarr;
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 3: IMOB (GESTÃO IMOBILIÁRIA) -->
+                    <div class="system-pane" id="pane-imob" role="tabpanel" aria-labelledby="tab-imob">
+                        <div class="pane-grid">
+                            <div class="pane-info">
+                                <div class="pane-badge imob-badge">
+                                    <i class="fa-solid fa-house-laptop"></i> Mercado Imobiliário & Locações
+                                </div>
+                                <h3 class="pane-title">IMOB — Gestão Imobiliária, Vendas & Locação</h3>
+                                <div class="domain-direct-box">
+                                    <i class="fa-solid fa-globe"></i>
+                                    <span>Domínio Oficial:</span>
+                                    <a href="https://imob.pajotech.com.br" target="_blank" rel="noopener noreferrer" class="domain-link">https://imob.pajotech.com.br <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                                <p class="pane-desc">
+                                    O <strong>IMOB Pajotech</strong> é a solução definitiva para imobiliárias e corretores autônomos. Gerencie carteiras de imóveis, contratos de locação automatizados com reajustes, repasses a proprietários, cobrança de aluguéis e CRM de atendimento.
+                                </p>
+
+                                <div class="features-checklist">
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-amber"></i>
+                                        <div>
+                                            <strong>Contratos de Locação & Reajuste Automático</strong>
+                                            <p>Cálculo de IGPM/IPCA, geração de recibos, boletos e repasses a proprietários.</p>
+                                        </div>
+                                    </div>
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-amber"></i>
+                                        <div>
+                                            <strong>CRM Imobiliário & Funil de Vendas</strong>
+                                            <p>Gestão de leads, histórico de visitas e controle de comissões por corretor.</p>
+                                        </div>
+                                    </div>
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-amber"></i>
+                                        <div>
+                                            <strong>Catálogo de Imóveis & Portal Web Integrado</strong>
+                                            <p>Cadastro com fotos em alta resolução, tour virtual e filtros avançados de busca.</p>
+                                        </div>
+                                    </div>
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-amber"></i>
+                                        <div>
+                                            <strong>Portal do Locatário e do Proprietário</strong>
+                                            <p>Acesso online a 2ª via de boletos, informes de rendimento e vistorias.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pane-actions">
+                                    <a href="https://imob.pajotech.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Acessar imob.pajotech.com.br
+                                    </a>
+                                    <button class="btn btn-glass" onclick="openDemoModal('IMOB - Gestão Imobiliária')">
+                                        <i class="fa-solid fa-key"></i> Solicitar Demonstração IMOB
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Visual Pane Mockup / Simulator -->
+                            <div class="pane-mockup-wrapper">
+                                <div class="mockup-screen-box">
+                                    <div class="screen-header">
+                                        <span class="screen-title"><i class="fa-solid fa-building"></i> Painel de Gestão Imobiliária</span>
+                                        <span class="screen-badge">Módulo Locações</span>
+                                    </div>
+                                    <div class="screen-body">
+                                        <div class="imob-kpis">
+                                            <div class="imob-kpi">
+                                                <small>Imóveis Ativos</small>
+                                                <strong>348 un.</strong>
+                                            </div>
+                                            <div class="imob-kpi">
+                                                <small>Taxa de Ocupação</small>
+                                                <strong>94.2%</strong>
+                                            </div>
+                                            <div class="imob-kpi">
+                                                <small>Aluguéis Recebidos</small>
+                                                <strong>R$ 184.500</strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="imob-property-cards">
+                                            <div class="property-preview">
+                                                <div class="prop-badge locacao">Locação</div>
+                                                <div class="prop-details">
+                                                    <strong>Ed. Heliópolis Tower</strong>
+                                                    <span>Garanhuns - PE • 3 Quartos (1 Suíte)</span>
+                                                    <span class="prop-price">R$ 2.400 / mês</span>
+                                                </div>
+                                                <span class="badge-status-green">Alugado</span>
+                                            </div>
+                                            <div class="property-preview">
+                                                <div class="prop-badge venda">Venda</div>
+                                                <div class="prop-details">
+                                                    <strong>Casa Residencial Suíça</strong>
+                                                    <span>Brejão - PE • 4 Quartos • Piscina</span>
+                                                    <span class="prop-price">R$ 480.000</span>
+                                                </div>
+                                                <span class="badge-status-amber">2 Propostas</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="mock-direct-btn-row">
+                                            <a href="https://imob.pajotech.com.br" target="_blank" class="mock-login-link">
+                                                Ir para o Portal IMOB (imob.pajotech.com.br) &rarr;
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 4: LAVANDERIA (GESTÃO OPERACIONAL) -->
+                    <div class="system-pane" id="pane-lavanderia" role="tabpanel" aria-labelledby="tab-lavanderia">
+                        <div class="pane-grid">
+                            <div class="pane-info">
+                                <div class="pane-badge lavanderia-badge">
+                                    <i class="fa-solid fa-jug-detergent"></i> Operação Comercial & Rastreamento
+                                </div>
+                                <h3 class="pane-title">Lavanderia — Sistema Completo de Gestão para Lavanderias</h3>
+                                <div class="domain-direct-box">
+                                    <i class="fa-solid fa-globe"></i>
+                                    <span>Domínio Oficial:</span>
+                                    <a href="https://lavanderia.pajotech.com.br" target="_blank" rel="noopener noreferrer" class="domain-link">https://lavanderia.pajotech.com.br <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                                <p class="pane-desc">
+                                    O <strong>Lavanderia Pajotech</strong> foi planejado para lavanderias industriais, hospitalares, hoteleiras e comerciais. Controle ordens de serviço por peça e por quilo, etiquetagem com código de barras, controle de etapas de lavagem e envio automático de WhatsApp quando o pedido estiver pronto.
+                                </p>
+
+                                <div class="features-checklist">
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-blue"></i>
+                                        <div>
+                                            <strong>Ordens de Serviço por Peça & Balança (Kg)</strong>
+                                            <p>Pesagem integrada, tabela de serviços por tipo de tecido e instruções especiais.</p>
+                                        </div>
+                                    </div>
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-blue"></i>
+                                        <div>
+                                            <strong>Etiquetagem & Rastreio por Código de Barras / QR</strong>
+                                            <p>Impressão de etiquetas térmicas e controle para evitar extravios de peças.</p>
+                                        </div>
+                                    </div>
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-blue"></i>
+                                        <div>
+                                            <strong>Funil de Etapas (Recepção &rarr; Lavagem &rarr; Passadoria &rarr; Entrega)</strong>
+                                            <p>Visão clara do fluxo produtivo de cada lote e maquinário.</p>
+                                        </div>
+                                    </div>
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-blue"></i>
+                                        <div>
+                                            <strong>Aviso Automático de Retirada via WhatsApp</strong>
+                                            <p>Notifique o cliente instantaneamente com chave PIX e valor total.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pane-actions">
+                                    <a href="https://lavanderia.pajotech.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Acessar lavanderia.pajotech.com.br
+                                    </a>
+                                    <button class="btn btn-glass" onclick="openDemoModal('Sistema para Lavanderias')">
+                                        <i class="fa-solid fa-shirt"></i> Conhecer Módulos do Sistema
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Visual Pane Mockup / Simulator -->
+                            <div class="pane-mockup-wrapper">
+                                <div class="mockup-screen-box">
+                                    <div class="screen-header">
+                                        <span class="screen-title"><i class="fa-solid fa-barcode"></i> Fluxo de Ordens de Serviço (OS)</span>
+                                        <span class="screen-badge">Fase Operação</span>
+                                    </div>
+                                    <div class="screen-body">
+                                        <div class="os-pipeline-steps">
+                                            <div class="step-card active">
+                                                <small>Recebido</small>
+                                                <strong>14 OS</strong>
+                                            </div>
+                                            <div class="step-card in-wash">
+                                                <small>Lavagem</small>
+                                                <strong>8 OS</strong>
+                                            </div>
+                                            <div class="step-card in-iron">
+                                                <small>Passadoria</small>
+                                                <strong>6 OS</strong>
+                                            </div>
+                                            <div class="step-card done">
+                                                <small>Pronto</small>
+                                                <strong>19 OS</strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="mock-table-widget">
+                                            <div class="table-title">Últimos Pedidos Prontos para Entrega</div>
+                                            <div class="lav-row">
+                                                <span class="os-number">OS #4082</span>
+                                                <div class="os-client">
+                                                    <strong>Hotel Serrano Palace</strong>
+                                                    <small>42kg Lençóis & Toalhas</small>
+                                                </div>
+                                                <span class="whatsapp-badge"><i class="fa-brands fa-whatsapp"></i> Notificado</span>
+                                            </div>
+                                            <div class="lav-row">
+                                                <span class="os-number">OS #4083</span>
+                                                <div class="os-client">
+                                                    <strong>Clínica São Camilo</strong>
+                                                    <small>18 Peças / Jalecos e Aventais</small>
+                                                </div>
+                                                <span class="whatsapp-badge"><i class="fa-brands fa-whatsapp"></i> Notificado</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="mock-direct-btn-row">
+                                            <a href="https://lavanderia.pajotech.com.br" target="_blank" class="mock-login-link">
+                                                Acessar Sistema Lavanderia (lavanderia.pajotech.com.br) &rarr;
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 5: TREE (CENTRAL DE LINKS & HUB) -->
+                    <div class="system-pane" id="pane-tree" role="tabpanel" aria-labelledby="tab-tree">
+                        <div class="pane-grid">
+                            <div class="pane-info">
+                                <div class="pane-badge tree-badge">
+                                    <i class="fa-solid fa-link"></i> Hub Centralizador de Links & Plataformas
+                                </div>
+                                <h3 class="pane-title">Pajotech Tree — Central Unificada de Links & Atendimento</h3>
+                                <div class="domain-direct-box">
+                                    <i class="fa-solid fa-globe"></i>
+                                    <span>Domínio Oficial:</span>
+                                    <a href="https://tree.pajotech.com.br" target="_blank" rel="noopener noreferrer" class="domain-link">https://tree.pajotech.com.br <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                                <p class="pane-desc">
+                                    O <strong>tree.pajotech.com.br</strong> é o portal unificado de acesso rápido, projetado para direcionar colaboradores, clientes e parceiros para todas as plataformas de suporte, sistemas operacionais, centrais de chamado e redes sociais da PAJO Tecnologia.
+                                </p>
+
+                                <div class="features-checklist">
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-purple"></i>
+                                        <div>
+                                            <strong>Hub Central de Todos os Sistemas</strong>
+                                            <p>Acesso rápido ao PJZap, SGH, Ponto, IMOB, Lavanderia e Painéis de Suporte.</p>
+                                        </div>
+                                    </div>
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-purple"></i>
+                                        <div>
+                                            <strong>Canais Diretos de Suporte Técnico & Comercial</strong>
+                                            <p>Atendimento humanizado via WhatsApp, Help Desk e abertura de chamados.</p>
+                                        </div>
+                                    </div>
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-purple"></i>
+                                        <div>
+                                            <strong>Disponibilidade Mobile-First Ultrarrápida</strong>
+                                            <p>Carregamento instantâneo para biografias de redes sociais e cartões digitais.</p>
+                                        </div>
+                                    </div>
+                                    <div class="check-item">
+                                        <i class="fa-solid fa-circle-check text-purple"></i>
+                                        <div>
+                                            <strong>Links Personalizados & Métricas de Acesso</strong>
+                                            <p>Painel de rastreamento de cliques e engajamento dos usuários.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pane-actions">
+                                    <a href="https://tree.pajotech.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Acessar tree.pajotech.com.br
+                                    </a>
+                                    <button class="btn btn-glass" onclick="openDemoModal('Pajotech Tree')">
+                                        <i class="fa-solid fa-share-nodes"></i> Criar Hub Corporativo
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Visual Pane Mockup / Simulator -->
+                            <div class="pane-mockup-wrapper">
+                                <div class="tree-phone-mockup">
+                                    <div class="phone-frame">
+                                        <div class="phone-camera"></div>
+                                        <div class="phone-screen">
+                                            <div class="tree-profile-header">
+                                                <div class="tree-avatar">
+                                                    <i class="fa-solid fa-microchip"></i>
+                                                </div>
+                                                <h4>PAJO Tecnologia</h4>
+                                                <p>@pajotecnologia • Garanhuns - PE</p>
+                                                <small>Sistemas Inteligentes & Serviços de TI</small>
+                                            </div>
+
+                                            <div class="tree-links-stack">
+                                                <a href="https://pjzap.pajotech.com.br" target="_blank" class="tree-link-card link-pjzap">
+                                                    <i class="fa-brands fa-whatsapp text-whatsapp"></i>
+                                                    <span>Entrar no PJZap WhatsApp</span>
+                                                </a>
+                                                <a href="https://sgh.pajotech.com.br" target="_blank" class="tree-link-card link-sgh">
+                                                    <i class="fa-solid fa-hospital-user"></i>
+                                                    <span>Acessar SGH Hospitalar</span>
+                                                </a>
+                                                <a href="https://ponto.pajotech.com.br" target="_blank" class="tree-link-card link-ponto">
+                                                    <i class="fa-solid fa-user-clock"></i>
+                                                    <span>Registrar Ponto Eletrônico</span>
+                                                </a>
+                                                <a href="https://imob.pajotech.com.br" target="_blank" class="tree-link-card link-imob">
+                                                    <i class="fa-solid fa-building-user"></i>
+                                                    <span>Portal IMOB Imobiliário</span>
+                                                </a>
+                                                <a href="https://lavanderia.pajotech.com.br" target="_blank" class="tree-link-card link-lavanderia">
+                                                    <i class="fa-solid fa-shirt"></i>
+                                                    <span>Sistema Lavanderia Pro</span>
+                                                </a>
+                                                <a href="https://wa.me/5587999999999" target="_blank" class="tree-link-card link-whats">
+                                                    <i class="fa-brands fa-whatsapp"></i>
+                                                    <span>Falar com Suporte PAJO</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- TRAJECTORY & HISTORY: CLICK INFORMÁTICA -> PAJO TECNOLOGIA -->
+        <section class="history-section" id="historia">
+            <div class="container">
+                <div class="history-grid">
+                    <div class="history-text-col">
+                        <span class="section-pill"><i class="fa-solid fa-landmark"></i> Nossa Trajetória</span>
+                        <h2 class="section-title">Da <span class="gradient-text">Click Informática</span> à <span class="gradient-text">PAJO Tecnologia</span></h2>
+                        <p class="history-lead">
+                            Uma história de comprometimento, pioneirismo e transformação digital que há décadas atende empresas em Garanhuns, Brejão e em todo o estado de Pernambuco.
+                        </p>
+                        <p class="history-body">
+                            Fundada originalmente como <strong>Click Informática</strong>, nossa empresa consolidou-se como sinônimo de suporte confiável, manutenção de equipamentos e soluções de informática sob medida.
+                        </p>
+                        <p class="history-body">
+                            Com a evolução das tecnologias em nuvem e a expansão do nosso time de engenharia de software, evoluímos para <strong>PAJO Tecnologia</strong>. Hoje, unimos a sólida experiência acumulada a uma suíte moderna de softwares SaaS em nuvem (PJZap Multiatendimento, SGH Hospitalar, Ponto Portaria 671, IMOB, Lavanderia e Pajotech Tree).
+                        </p>
+
+                        <!-- Timeline Mini Cards -->
+                        <div class="timeline-cards">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"><i class="fa-solid fa-desktop"></i></div>
+                                <div class="timeline-info">
+                                    <strong>Era Click Informática</strong>
+                                    <span>Pioneirismo em infraestrutura, manutenção e suporte técnico local com ética e excelência.</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot current"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                                <div class="timeline-info">
+                                    <strong>PAJO Tecnologia (Pajotech)</strong>
+                                    <span>Desenvolvimento de softwares em nuvem, controle de ponto homologado, PJZap e ecossistema integrado.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mission & Vision Cards (Direct from pajotecnologia.com.br) -->
+                    <div class="mission-vision-col">
+                        <div class="glass-card mission-card">
+                            <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
+                            <h3>Nossa Missão</h3>
+                            <p>
+                                "Atualizar e oferecer soluções tecnológicas completas que atendam às demandas atuais das empresas, garantindo inovação, eficiência e parceria de confiança contínua."
+                            </p>
+                        </div>
+
+                        <div class="glass-card vision-card">
+                            <div class="card-icon"><i class="fa-solid fa-compass"></i></div>
+                            <h3>Nossa Visão</h3>
+                            <p>
+                                "Ser referência em tecnologia em Garanhuns - PE e região, proporcionando excelência em desenvolvimento de software e serviços que impulsionem o sucesso dos nossos clientes."
+                            </p>
+                        </div>
+
+                        <div class="glass-card values-card">
+                            <div class="card-icon"><i class="fa-solid fa-gem"></i></div>
+                            <h3>Nossos Valores</h3>
+                            <p>
+                                Inovação prática, segurança da informação (LGPD), transparência nas relações, suporte humanizado e compromisso com o resultado de cada parceiro.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE US / DIFERENCIAIS (Direct from pajotecnologia.com.br) -->
+        <section class="differentials-section" id="diferenciais">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-pill"><i class="fa-solid fa-award"></i> Por Que a PAJO?</span>
+                    <h2 class="section-title">Diferenciais <span class="gradient-text">PAJO Tecnologia</span></h2>
+                    <p class="section-subtitle">
+                        Oferecemos serviços atualizados e personalizados que acompanham as necessidades reais de cada cliente, com foco em qualidade, inovação e resultado.
+                    </p>
+                </div>
+
+                <div class="diff-cards-grid">
+                    <div class="diff-card">
+                        <div class="diff-icon-box icon-experience">
+                            <i class="fa-solid fa-medal"></i>
+                        </div>
+                        <h3>Experiência Comprovada</h3>
+                        <p>Transformamos demandas complexas em soluções efetivas com uma equipe altamente qualificada, experiente e dedicada ao seu crescimento.</p>
+                    </div>
+
+                    <div class="diff-card">
+                        <div class="diff-icon-box icon-personalized">
+                            <i class="fa-solid fa-handshake-angle"></i>
+                        </div>
+                        <h3>Atendimento Personalizado</h3>
+                        <p>Acompanhamento próximo para entender a fundo a rotina da sua empresa e entregar a solução que realmente resolve seus desafios diários.</p>
+                    </div>
+
+                    <div class="diff-card">
+                        <div class="diff-icon-box icon-innovation">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3>Flexibilidade e Inovação</h3>
+                        <p>Soluções tecnológicas modernas, sistemas responsivos em nuvem e adaptação ágil às tendências mais recentes do mercado.</p>
+                    </div>
+
+                    <div class="diff-card">
+                        <div class="diff-icon-box icon-support">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <h3>Suporte Contínuo</h3>
+                        <p>Equipe técnica sempre disponível para garantir o funcionamento ideal, backups automáticos e atualizações periódicas dos sistemas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES ACCORDION & TI SPECIALIZED SERVICES -->
+        <section class="services-overview-section">
+            <div class="container">
+                <div class="services-split">
+                    <div class="services-info">
+                        <span class="section-pill"><i class="fa-solid fa-gears"></i> Soluções Integradas</span>
+                        <h2 class="section-title">Desenvolvimento & <span class="gradient-text">Serviços Especializados</span></h2>
+                        <p class="services-lead">
+                            Além das nossas plataformas prontas, atuamos como braço estratégico de tecnologia para empresas de todos os portes.
+                        </p>
+
+                        <div class="service-accordion" id="servicesAccordion">
+                            <div class="accordion-item active">
+                                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                                    <span><i class="fa-solid fa-code text-emerald"></i> Desenvolvimento Sob Medida</span>
+                                    <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                                </button>
+                                <div class="accordion-panel">
+                                    <p>Softwares e aplicativos desenvolvidos sob medida para resolver gargalos específicos do seu modelo de negócio, com alta escalabilidade e segurança.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                                    <span><i class="fa-solid fa-robot text-cyan"></i> Automação de Processos Empresariais & Chatbots</span>
+                                    <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                                </button>
+                                <div class="accordion-panel">
+                                    <p>Implementação de rotinas automatizadas, integrações de APIs, fluxos de atendimento com WhatsApp (PJZap) e relatórios gerenciais.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-btn" onclick="toggleAccordion(this)">
+                                    <span><i class="fa-solid fa-server text-amber"></i> Consultoria & Suporte Técnico de TI</span>
+                                    <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                                </button>
+                                <div class="accordion-panel">
+                                    <p>Assessoria completa em infraestrutura, redes, segurança de dados, migração para nuvem e suporte contínuo para manter sua operação 100% ativa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services-card-visual">
+                        <div class="tech-stack-card">
+                            <h3>Tecnologia de Ponta a Ponta</h3>
+                            <p>Nossas plataformas utilizam infraestrutura moderna e segura.</p>
+                            <div class="tech-tags-grid">
+                                <span class="tech-pill"><i class="fa-brands fa-whatsapp"></i> API WhatsApp Oficial</span>
+                                <span class="tech-pill"><i class="fa-solid fa-cloud"></i> Cloud Architecture</span>
+                                <span class="tech-pill"><i class="fa-solid fa-lock"></i> SSL 256-bit</span>
+                                <span class="tech-pill"><i class="fa-solid fa-database"></i> Backup Diário</span>
+                                <span class="tech-pill"><i class="fa-solid fa-mobile-screen"></i> 100% Responsivo</span>
+                                <span class="tech-pill"><i class="fa-solid fa-certificate"></i> Portaria 671 MTE</span>
+                            </div>
+                            <div class="tech-cta-box">
+                                <strong>Precisa de um projeto exclusivo?</strong>
+                                <a href="#contato" class="btn btn-sm btn-primary">Falar com Desenvolvedor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT & LOCATION SECTION (Direct details from pajotecnologia.com.br) -->
+        <section class="contact-section" id="contato">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-pill"><i class="fa-solid fa-envelope-open-text"></i> Atendimento</span>
+                    <h2 class="section-title">Fale com a <span class="gradient-text">PAJO Tecnologia</span></h2>
+                    <p class="section-subtitle">
+                        Estamos à disposição para esclarecer dúvidas, apresentar demonstrações e criar a melhor solução em tecnologia para o seu negócio.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Info Column -->
+                    <div class="contact-info-card">
+                        <h3>Informações de Contato</h3>
+                        <p class="contact-intro">
+                            Entre em contato conosco por e-mail, WhatsApp ou visite nossos endereços comerciais em Pernambuco.
+                        </p>
+
+                        <div class="contact-methods">
+                            <!-- Commercial Email -->
+                            <a href="mailto:paulo@pajotecnologia.com.br" class="contact-method-item">
+                                <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="method-details">
+                                    <small>E-mail Comercial</small>
+                                    <strong>paulo@pajotecnologia.com.br</strong>
+                                </div>
+                            </a>
+
+                            <!-- Commercial Addresses -->
+                            <div class="contact-method-item">
+                                <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="method-details">
+                                    <small>Endereço Comercial - Brejão</small>
+                                    <strong>Rua da Esperança, 40 - Centro</strong>
+                                    <span>Brejão - PE</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-method-item">
+                                <div class="method-icon"><i class="fa-solid fa-building"></i></div>
+                                <div class="method-details">
+                                    <small>Endereço Comercial - Garanhuns</small>
+                                    <strong>Rua Ivailton Areias, 235</strong>
+                                    <span>D. Irineu Roque Scherer - Garanhuns - PE</span>
+                                </div>
+                            </div>
+
+                            <!-- WhatsApp Direct -->
+                            <a href="https://wa.me/5587999999999?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20as%20soluções%20da%20PAJO%20Tecnologia." target="_blank" rel="noopener noreferrer" class="contact-method-item highlight-whats">
+                                <div class="method-icon whatsapp"><i class="fa-brands fa-whatsapp"></i></div>
+                                <div class="method-details">
+                                    <small>Atendimento WhatsApp Direto</small>
+                                    <strong>Clique para Iniciar Conversa</strong>
+                                    <span>Resposta rápida de Seg a Sex</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Form Column -->
+                    <div class="contact-form-card">
+                        <h3>Envie uma Mensagem</h3>
+                        <form id="pajoContactForm" onsubmit="handleContactSubmit(event)">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Seu Nome *</label>
+                                    <input type="text" id="name" name="name" placeholder="Ex: Carlos Silva" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="company">Sua Empresa</label>
+                                    <input type="text" id="company" name="company" placeholder="Ex: Clínica / Empresa X">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">E-mail Corporativo *</label>
+                                    <input type="email" id="email" name="email" placeholder="carlos@empresa.com.br" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Telefone / WhatsApp *</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="(87) 99999-9999" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="systemSelect">Sistema de Interesse</label>
+                                <select id="systemSelect" name="system">
+                                    <option value="PJZap">PJZap — Multiatendimento WhatsApp (pjzap.pajotech.com.br)</option>
+                                    <option value="SGH">SGH — Sistema Hospitalar & Clínicas (sgh.pajotech.com.br)</option>
+                                    <option value="Ponto">Ponto — Controle de Ponto Portaria 671 (ponto.pajotech.com.br)</option>
+                                    <option value="IMOB">IMOB — Gestão Imobiliária & Locação (imob.pajotech.com.br)</option>
+                                    <option value="Lavanderia">Lavanderia — Sistema Especializado (lavanderia.pajotech.com.br)</option>
+                                    <option value="Tree">Pajotech Tree — Central de Links (tree.pajotech.com.br)</option>
+                                    <option value="Desenvolvimento">Desenvolvimento Sob Medida / Outro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Mensagem ou Detalhes da Solicitação</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Conte-nos como podemos ajudar sua empresa..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitContactBtn">
+                                <i class="fa-solid fa-paper-plane"></i> Enviar Mensagem
+                            </button>
+
+                            <div class="form-feedback" id="formFeedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER COMPLETO -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-top-grid">
+                
+                <!-- Col 1: Brand & History -->
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <img src="assets/logo-pajo.png" alt="PAJO Tecnologia" class="footer-logo-img">
+                    </div>
+                    <p class="footer-about-text">
+                        A <strong>PAJO Tecnologia</strong> (anteriormente <strong>Click Informática</strong>), com vasta experiência e constante renovação, oferece desenvolvimento de softwares, <strong>PJZap Multiatendimento</strong>, controle de ponto eletrônico, sistemas hospitalares, imobiliários e prestação de serviços especializados em TI.
+                    </p>
+                    <div class="footer-social-links">
+                        <a href="https://wa.me/5587999999999" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="mailto:paulo@pajotecnologia.com.br" title="E-mail"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Nossos Sistemas em Nuvem -->
+                <div class="footer-col">
+                    <h4>Nossos Sistemas</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="https://pjzap.pajotech.com.br" target="_blank"><i class="fa-brands fa-whatsapp text-whatsapp"></i> PJZap WhatsApp (pjzap.pajotech)</a></li>
+                        <li><a href="https://sgh.pajotech.com.br" target="_blank"><i class="fa-solid fa-hospital-user"></i> SGH Hospitalar (sgh.pajotech)</a></li>
+                        <li><a href="https://ponto.pajotech.com.br" target="_blank"><i class="fa-solid fa-user-clock"></i> Ponto Eletrônico (ponto.pajotech)</a></li>
+                        <li><a href="https://imob.pajotech.com.br" target="_blank"><i class="fa-solid fa-building-user"></i> IMOB Imobiliária (imob.pajotech)</a></li>
+                        <li><a href="https://lavanderia.pajotech.com.br" target="_blank"><i class="fa-solid fa-shirt"></i> Lavanderia Pro (lavanderia.pajotech)</a></li>
+                        <li><a href="https://tree.pajotech.com.br" target="_blank"><i class="fa-solid fa-diagram-project"></i> Pajotech Tree (tree.pajotech)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Navegação Rápida -->
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#inicio">Página Inicial</a></li>
+                        <li><a href="#sistemas">Abas dos Sistemas</a></li>
+                        <li><a href="#historia">Quem Somos (Click Informática)</a></li>
+                        <li><a href="#diferenciais">Nossos Diferenciais</a></li>
+                        <li><a href="#contato">Fale Conosco</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Endereços & Contato -->
+                <div class="footer-col">
+                    <h4>Unidades & Contato</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Rua Ivailton Areias, 235 - D. Irineu Roque Scherer, Garanhuns - PE</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Rua da Esperança, 40 - Centro, Brejão - PE</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>paulo@pajotecnologia.com.br</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom-bar">
+                <div class="copyright-text">
+                    &copy; <span id="currentYear">2026</span> <strong>PAJO Tecnologia</strong>. Todos os direitos reservados.
+                </div>
+                <div class="footer-legacy-note">
+                    Tradição e Inovação • Garanhuns - PE | Brejão - PE
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE DEMO / SCHEDULE MODAL -->
+    <div class="modal-overlay" id="demoModal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3 id="modalTitle">Solicitar Demonstração</h3>
+                <button class="modal-close" onclick="closeDemoModal()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <p id="modalDesc">Preencha os dados abaixo para que nosso especialista agende uma apresentação guiada do sistema.</p>
+                <form id="modalDemoForm" onsubmit="handleModalSubmit(event)">
+                    <input type="hidden" id="modalTargetSystem" value="PJZap">
+                    <div class="form-group">
+                        <label>Nome Completo</label>
+                        <input type="text" id="modalName" required placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label>WhatsApp / Telefone</label>
+                        <input type="tel" id="modalPhone" required placeholder="(87) 99999-9999">
+                    </div>
+                    <div class="form-group">
+                        <label>Nome da Empresa / Instituição</label>
+                        <input type="text" id="modalCompany" required placeholder="Sua empresa">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fa-brands fa-whatsapp"></i> Enviar Solicitação via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Action Button -->
+    <a href="https://wa.me/5587999999999?text=Olá!%20Acessei%20o%20site%20da%20PAJO%20Tecnologia%20e%20gostaria%20de%20falar%20com%20um%20consultor." target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" title="Falar no WhatsApp" aria-label="Falar no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="float-tooltip">Fale Conosco no WhatsApp</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
