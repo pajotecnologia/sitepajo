@@ -72,7 +72,7 @@ body.dark-theme {
     --announcement-bg: #041410;
     --announcement-border: rgba(16, 185, 129, 0.25);
 
-    --logo-filter: brightness(0) invert(1);
+    --logo-filter: none;
 }
 
 /* Light Theme Mode */
