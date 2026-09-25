@@ -24,96 +24,12 @@ const PAJO_CONFIG = {
 };
 
 const systemsData = {
-    pjzap: {
-        name: 'PJZap Multiatendimento',
-        url: 'https://pjzap.pajotech.com.br',
-        previewUrl: 'https://pjzap.pajotech.com.br/atendimentos',
-        badge: 'PJZAP MULTIATENDIMENTO',
-        badgeIcon: 'fa-whatsapp',
-        tag: 'WhatsApp Omnichannel',
-        title: 'Múltiplos Atendentes em 1 Único WhatsApp',
-        desc: 'Centralize filas por departamentos (Vendas, Suporte, Financeiro), chatbots automáticos e relatórios de SLA.',
-        kpis: [
-            { label: 'Atendimentos/Dia', val: '1.840+' },
-            { label: 'Tempo Médio Espera', val: '45 seg' },
-            { label: 'Satisfação CSAT', val: '98.6%' }
-        ]
-    },
-    sgh: {
-        name: 'SGH Hospitalar',
-        url: 'https://sgh.pajotech.com.br',
-        previewUrl: 'https://sgh.pajotech.com.br/dashboard',
-        badge: 'SGH HOSPITALAR',
-        badgeIcon: 'fa-heart-pulse',
-        tag: 'Versão Cloud 2026',
-        title: 'Gestão Médica, Triagem Manchester & PEP',
-        desc: 'Prontuário eletrônico integrado, recepção, agendamento ágil e faturamento TISS completo.',
-        kpis: [
-            { label: 'Pacientes Atendidos', val: '14.850+' },
-            { label: 'Tempo Médio Triagem', val: '3 min' },
-            { label: 'Ocupação Leitos', val: '87%' }
-        ]
-    },
-    ponto: {
-        name: 'EzPoint Web (Ponto & Faciais)',
-        url: 'https://ponto.pajotech.com.br',
-        previewUrl: 'https://ponto.pajotech.com.br',
-        badge: 'EZPOINT WEB & FACIAIS FOCUS / EVO 40',
-        badgeIcon: 'fa-user-clock',
-        tag: 'Portaria 671 MTE',
-        title: 'Soluções em Ponto Eletrônico & Aparelhos Faciais',
-        desc: 'Tratamento em nuvem EzPoint Web, reconhecimento facial ultrarrápido com aparelhos FOCUS e EVO 40, cerca virtual GPS e conformidade legal.',
-        kpis: [
-            { label: 'Reconhecimento', val: '< 0.2 seg' },
-            { label: 'Homologação', val: 'Portaria 671' },
-            { label: 'Economia RH', val: '40%' }
-        ]
-    },
-    imob: {
-        name: 'IMOB Imobiliária',
-        url: 'https://imob.pajotech.com.br',
-        previewUrl: 'https://imob.pajotech.com.br/carteira-imoveis',
-        badge: 'IMOB GESTÃO',
-        badgeIcon: 'fa-building-user',
-        tag: 'Vendas & Locações',
-        title: 'Contratos Inteligentes & CRM de Corretores',
-        desc: 'Gestão completa de locações, reajustes automáticos, repasses a proprietários e portal do locatário.',
-        kpis: [
-            { label: 'Imóveis Ativos', val: '348 un.' },
-            { label: 'Ocupação', val: '94.2%' },
-            { label: 'Aluguéis Mês', val: 'R$ 184k' }
-        ]
-    },
-    lavanderia: {
-        name: 'SGL Lavanderia',
-        url: 'https://sgl.pajotech.com.br',
-        previewUrl: 'https://sgl.pajotech.com.br/ordens-servico',
-        badge: 'SGL LAVANDERIA',
-        badgeIcon: 'fa-shirt',
-        tag: 'Rastreio por Barcode',
-        title: 'Controle de OS por Peça, Peso & WhatsApp',
-        desc: 'Etiquetagem com código de barras, controle de etapas de lavagem e envio de aviso de retirada.',
-        kpis: [
-            { label: 'OS em Aberto', val: '47' },
-            { label: 'Tempo Lavagem', val: '45 min' },
-            { label: 'Alertas Whats', val: '100%' }
-        ]
-    },
-    tree: {
-        name: 'Pajotech Tree',
-        url: 'https://tree.pajotech.com.br',
-        previewUrl: 'https://tree.pajotech.com.br/@pajo',
-        badge: 'PAJOTECH TREE',
-        badgeIcon: 'fa-diagram-project',
-        tag: 'Hub Corporativo',
-        title: 'Central Unificada de Links & Atendimento',
-        desc: 'Portal direto com canais de suporte, acesso a plataformas e direcionamento para clientes.',
-        kpis: [
-            { label: 'Links Ativos', val: '12' },
-            { label: 'Cliques Mensais', val: '28.5k' },
-            { label: 'Uptime', val: '99.9%' }
-        ]
-    }
+    pjzap: { name: 'PJZap', url: 'https://pjzap.pajotech.com.br', previewUrl: 'https://pjzap.pajotech.com.br', badge: 'PJZAP', badgeIcon: 'fa-whatsapp', tag: 'Atendimento', title: 'PJZap', desc: 'Solução de atendimento pelo WhatsApp.', kpis: [] },
+    sgh: { name: 'SGH', url: 'https://sgh.pajotech.com.br', previewUrl: 'https://sgh.pajotech.com.br', badge: 'SGH', badgeIcon: 'fa-hospital-user', tag: 'Saúde', title: 'SGH', desc: 'Sistema para gestão hospitalar e de clínicas.', kpis: [] },
+    ponto: { name: 'EzPoint Web', url: 'https://ponto.pajotech.com.br', previewUrl: 'https://ponto.pajotech.com.br', badge: 'EZPOINT WEB', badgeIcon: 'fa-user-clock', tag: 'Controle de ponto', title: 'EzPoint Web', desc: 'Solução de controle de ponto com terminais FOCUS e EVO 40.', kpis: [] },
+    imob: { name: 'IMOB', url: 'https://imob.pajotech.com.br', previewUrl: 'https://imob.pajotech.com.br', badge: 'IMOB', badgeIcon: 'fa-building-user', tag: 'Imobiliário', title: 'IMOB', desc: 'Solução para gestão de imóveis e locações.', kpis: [] },
+    lavanderia: { name: 'SGL Lavanderia', url: 'https://sgl.pajotech.com.br', previewUrl: 'https://sgl.pajotech.com.br', badge: 'SGL', badgeIcon: 'fa-shirt', tag: 'Lavanderia', title: 'SGL Lavanderia', desc: 'Solução de gestão para lavanderias.', kpis: [] },
+    tree: { name: 'Pajotech Tree', url: 'https://tree.pajotech.com.br', previewUrl: 'https://tree.pajotech.com.br', badge: 'PAJOTECH TREE', badgeIcon: 'fa-diagram-project', tag: 'Links digitais', title: 'Pajotech Tree', desc: 'Perfil digital e centralização de links.', kpis: [] }
 };
 
 function switchSystemTab(systemKey) {
