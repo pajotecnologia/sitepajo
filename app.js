@@ -28,7 +28,7 @@ const systemsData = {
     sgh: { name: 'SGH', url: 'https://sgh.pajotech.com.br', previewUrl: 'https://sgh.pajotech.com.br', badge: 'SGH', badgeIcon: 'fa-hospital-user', tag: 'Saúde', title: 'SGH', desc: 'Sistema para gestão hospitalar e de clínicas.', kpis: [] },
     ponto: { name: 'EzPoint Web', url: 'https://ponto.pajotech.com.br', previewUrl: 'https://ponto.pajotech.com.br', badge: 'EZPOINT WEB', badgeIcon: 'fa-user-clock', tag: 'Controle de ponto', title: 'EzPoint Web', desc: 'Solução de controle de ponto com terminais FOCUS e EVO 40.', kpis: [] },
     imob: { name: 'IMOB', url: 'https://imob.pajotech.com.br', previewUrl: 'https://imob.pajotech.com.br', badge: 'IMOB', badgeIcon: 'fa-building-user', tag: 'Imobiliário', title: 'IMOB', desc: 'Solução para gestão de imóveis e locações.', kpis: [] },
-    lavanderia: { name: 'SGL Lavanderia', url: 'https://sgl.pajotech.com.br', previewUrl: 'https://sgl.pajotech.com.br', badge: 'SGL', badgeIcon: 'fa-shirt', tag: 'Lavanderia', title: 'SGL Lavanderia', desc: 'Solução de gestão para lavanderias.', kpis: [] },
+    lavanderia: { name: 'SGL', url: 'https://sgl.pajotech.com.br', previewUrl: 'https://sgl.pajotech.com.br', badge: 'SGL', badgeIcon: 'fa-shirt', tag: 'Lavanderia', title: 'SGL (Sistema Gestão de Lavanderia)', desc: 'Sistema Gestão de Lavanderia — controle de produção, ordens de serviço e clientes.', kpis: [] },
     tree: { name: 'Pajotech Tree', url: 'https://tree.pajotech.com.br', previewUrl: 'https://tree.pajotech.com.br', badge: 'PAJOTECH TREE', badgeIcon: 'fa-diagram-project', tag: 'Links digitais', title: 'Pajotech Tree', desc: 'Perfil digital e centralização de links.', kpis: [] }
 };
 
