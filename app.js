@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initCounters();
     initHashNavigation();
     initCopyrightYear();
+    initBackToTop();
 });
 
 /* --------------------------------------------------------------------------
@@ -448,6 +449,18 @@ function initHashNavigation() {
             switchSystemTab(hash);
         }
     });
+}
+
+function initBackToTop() {
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    if (!backToTopBtn) return;
+
+    const updateBackToTop = () => {
+        backToTopBtn.classList.toggle('visible', window.scrollY > 420);
+    };
+
+    updateBackToTop();
+    window.addEventListener('scroll', updateBackToTop, { passive: true });
 }
 
 function initCopyrightYear() {
