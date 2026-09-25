@@ -2651,3 +2651,50 @@ body.light-theme .dark-icon { display: block; }
 @media (prefers-reduced-motion: reduce) {
     .segment-card, .faq-list .accordion-panel, .faq-list .arrow-icon { transition: none; }
 }
+
+
+/* --------------------------------------------------------------------------
+   ACCESSIBILITY / PLATFORM CTA CLEANUP
+   Keep one clear external CTA per platform and prevent long labels from
+   overflowing on desktop or mobile.
+   -------------------------------------------------------------------------- */
+.domain-direct-box {
+    min-width: 0;
+    flex-wrap: wrap;
+}
+
+.domain-direct-box .domain-link {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.pane-actions {
+    align-items: stretch;
+}
+
+.pane-actions .btn {
+    min-width: 0;
+    flex: 1 1 220px;
+    justify-content: center;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    .pane-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .pane-actions .btn {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+
+    .domain-direct-box {
+        align-items: flex-start;
+        line-height: 1.45;
+    }
+}
