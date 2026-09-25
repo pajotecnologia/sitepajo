@@ -2878,3 +2878,64 @@ button, a, input, select, textarea {
         gap: 10px;
     }
 }
+
+
+/* --------------------------------------------------------------------------
+   PAJO — BACK TO TOP / HOME CTA
+   -------------------------------------------------------------------------- */
+.back-to-top-btn {
+    position: fixed;
+    right: 28px;
+    bottom: 100px;
+    z-index: 98;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 42px;
+    padding: 10px 15px;
+    border: 1px solid var(--border-card-hover);
+    border-radius: var(--radius-full);
+    background: var(--bg-card);
+    color: var(--text-main);
+    box-shadow: var(--shadow-md);
+    text-decoration: none;
+    font-size: .82rem;
+    font-weight: 700;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: opacity .2s ease, transform .2s ease, visibility .2s ease, border-color .2s ease, color .2s ease;
+}
+
+.back-to-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.back-to-top-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.back-to-top-btn i { font-size: .9rem; }
+
+@media (max-width: 768px) {
+    .back-to-top-btn {
+        right: 16px;
+        bottom: 84px;
+        min-height: 40px;
+        padding: 9px 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .back-to-top-btn { right: 16px; bottom: 82px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .back-to-top-btn { transition: none; }
+}
